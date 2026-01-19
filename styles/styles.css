@@ -38,6 +38,9 @@ aside {
 aside img {
   width: 200px;
   height: auto;
+  border: 1px solid black;
+  padding: 5px;
+  box-shadow: 0 0 20px gray;
 }
 
 main img {
