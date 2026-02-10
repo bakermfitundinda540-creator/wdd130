@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My favorite-city Baker/WDD 130</title>
-    <meta name="description"
-      content="My name is Baker Mfitundinda,Am a software developer and I love creating websites for business,Come one come all we support each other.">
-    <meta name="author" content="Baker Mfitundinda">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="White Water Rafting Adventures home page with guided trips, newsletter, and trip highlights.">
+    <meta name="author" content="Mfitundinda Baker">
+    <title>Home - White Water Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-    
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-        </nav>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo-link" href="index.html">
+                <img src="images/z-wwr-blue.jpg" alt="White Water Rafting Adventures Logo" class="logo">
+            </a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h1>Mfitundinda baker|WDD 130</h1>
-        <aside>
-            <h2>Uganda</h2>
-            <img src="week02/images/uganda-kampala.webp" alt="Uganda-kampala" width="200">
-            <p>Uganda is a beautiful country located in East Africa, known for its diverse
-                landscapes that include mountains, lakes, and savannas. It is home to a rich variety
-                of wildlife, including the famous mountain gorillas found in Bwindi Impenetrable
-                National Park.</p>
-        </aside>
-        <img src="week02/images/profile.jpg" alt="Baker" width="200">
-        <p>
-            Hello! Am Mfitundinda Baker a software developer based in Kampala ,Uganda.Am very
-            excited and I love this course beacuse it equips me with ideas and skills to websites.My
-            goal being a data analyst sounds the best with degree added from my beautuful and loved
-            BYU Idaho university
-        </p>
+        <section class="hero">
+            <img src="images/z-rapids-trees.jpg" alt="Rafters navigating forested rapids">
+            <div class="hero-content">
+                <h1>White Water Rafting Adventures</h1>
+                <p>Find your flow on rivers made for bold crews, first-timers, and thrill seekers.</p>
+                <a class="btn" href="trips.html">Explore Trips</a>
+            </div>
+        </section>
+
+        <section class="newsletter" aria-label="Newsletter sign up">
+            <div class="newsletter-text">
+                <h2>River-ready newsletter</h2>
+                <p>Season openings, gear tips, and insider access to new trips. Join the crew.</p>
+            </div>
+            <form class="newsletter-form" action="#" method="post">
+                <label for="newsletter-name">Name</label>
+                <input type="text" id="newsletter-name" name="name" required>
+                <label for="newsletter-email">Email</label>
+                <input type="email" id="newsletter-email" name="email" required>
+                <button class="btn" type="submit">Sign Me Up</button>
+            </form>
+        </section>
+
+        <section class="home-grid">
+            <article class="grid-card">
+                <img src="images/rafting-1.webp" alt="Group rafting through rushing water">
+                <div class="grid-content">
+                    <h2>Our Purpose</h2>
+                    <p>We guide safe, unforgettable rafting adventures that connect people to wild rivers, local guides, and the joy of moving water.</p>
+                </div>
+            </article>
+            <article class="grid-card">
+                <img src="images/rafting59_600.webp" alt="Rafting team celebrating on the river">
+                <div class="grid-content">
+                    <h2>What We Offer</h2>
+                    <p>Half-day sprints, full-day classics, and multi-day expeditions with expert guides, top safety standards, and unforgettable scenery.</p>
+                </div>
+            </article>
+        </section>
     </main>
-    <footer>
-        <p>&copy;2026🌴Baker Mfitundinda🌴Kampala,Uganda</p>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 White Water Rafting Adventures | Mfitundinda Baker</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com" aria-label="Visit our Facebook page">
+                    <img src="images/facebook-square.svg" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com" aria-label="Visit our Instagram page">
+                    <img src="images/instagram-square.svg" alt="Instagram Icon">
+                </a>
+                <a href="https://wa.me" aria-label="Contact us on WhatsApp">
+                    <img src="images/whatsapp.svg" alt="WhatsApp Icon">
+                </a>
+            </nav>
+        </div>
     </footer>
 </body>
-
 </html>

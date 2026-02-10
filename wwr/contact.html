@@ -3,140 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Rafting Adventures for bookings, inquiries, or suggestions. Reach us via phone, email, or visit our location.">
-    <meta name="author" content="MFITUNDINDA BAKER">
+    <meta name="description" content="Contact White Water Rafting Adventures for bookings, inquiries, or suggestions. Reach us by phone, email, or visit our location.">
+    <meta name="author" content="Mfitundinda Baker">
     <title>Contact Us - White Water Rafting Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <div class="header-grid">
-            <img src="images/z-wwr-blue.jpg" alt="White Water Rafting Logo" class="logo">
-            <nav>
-                <ul class="nav-flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo-link" href="index.html">
+                <img src="images/z-wwr-blue.jpg" alt="White Water Rafting Adventures Logo" class="logo">
+            </a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
             </nav>
         </div>
     </header>
-    
+
     <main>
-        <div class="contact-hero">
-            <h1>Contact White Water Rafting Adventures</h1>
+        <section class="hero hero-short">
             <img src="images/hero_transparency.webp" alt="Rafters navigating through white water rapids">
-        </div>
-        
-        <div class="contact-container">
-            <!-- Contact Info and Form Side by Side -->
+            <div class="hero-content">
+                <h1>Contact White Water Rafting Adventures</h1>
+            </div>
+        </section>
+
+        <section class="contact-container">
             <div class="contact-main-section">
                 <div class="contact-info">
                     <h2>White Water Rafting Company</h2>
-                    <div class="business-address">
-                        <p>123 Main River Street<br>
-                        Kolob, California</p>
-                        
-                        <p>+1 999 999 9999</p>
-                        
-                        <p>info@whitewater.com</p>
-                    </div>
-                    
+                    <p>123 Main River Street<br>Kolob, California</p>
+                    <p>+1 999 999 9999</p>
+                    <p>info@whitewater.com</p>
                     <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177858804427!2d-111.89185408459416!3d40.71462397933128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528a3f6a3fbddd%3A0x8b5b3b3b3b3b3b3b!2sWhite%20Water%20Rafting%20Adventures!5e0!3m2!1sen!2sus!4v1618867556783!5m2!1sen!2sus" 
-                            loading="lazy" 
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177858804427!2d-111.89185408459416!3d40.71462397933128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528a3f6a3fbddd%3A0x8b5b3b3b3b3b3b3b!2sWhite%20Water%20Rafting%20Adventures!5e0!3m2!1sen!2sus!4v1618867556783!5m2!1sen!2sus"
+                            loading="lazy"
                             title="White Water Rafting Adventures Location">
                         </iframe>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
-                    <h2>Get in Touch!</h2>
-                    <form action="submit-contact.php" method="post">
+                    <h2>Get in Touch</h2>
+                    <form action="#" method="post">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Mfitundinda Baker">
+                            <input type="text" id="name" name="name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="bakermfitundinda540@example.com">
+                            <input type="email" id="email" name="email" required>
                         </div>
-                        
+
                         <fieldset class="form-group">
                             <legend>Message Purpose</legend>
                             <div class="radio-group">
                                 <label class="radio-option">
                                     <input type="radio" id="general" name="purpose" value="general" required>
-                                    <span class="radio-label">General Inquiry</span>
+                                    <span>General Inquiry</span>
                                 </label>
                                 <label class="radio-option">
                                     <input type="radio" id="reservation" name="purpose" value="reservation">
-                                    <span class="radio-label">Reservation Question</span>
+                                    <span>Reservation Question</span>
                                 </label>
                                 <label class="radio-option">
                                     <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                                    <span class="radio-label">Website Suggestion</span>
+                                    <span>Website Suggestion</span>
                                 </label>
                             </div>
                         </fieldset>
-                        
+
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Type here..."></textarea>
+                            <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-option">
+
+                        <div class="form-group">
+                            <label class="checkbox-option" for="newsletter">
                                 <input type="checkbox" name="newsletter" id="newsletter">
-                                <span class="checkbox-label">Please subscribe me to the monthly newsletter</span>
+                                <span>Subscribe me to the monthly newsletter</span>
                             </label>
                         </div>
-                        
+
                         <div class="form-group">
-                            <button type="submit" class="submit-btn">Get in Touch!</button>
+                            <button type="submit" class="btn submit-btn">Send Message</button>
                         </div>
                     </form>
                 </div>
             </div>
-            
-            <!-- Employee Profiles Section -->
-            <section class="employee-profiles">
-                <h2>Our Team</h2>
-                <div class="profiles-grid">
-                    <div class="profile-card">
-                        <img src="images/sarah-johnson.webp" alt="Sarah Johnson - Safety Director">
-                        <div class="profile-caption">
-                            <h3>Sarah Johnson</h3>
-                            <p>Safety Director</p>
-                        </div>
-                    </div>
-                    
-                    <div class="profile-card">
-                        <img src="images/mark-rodriguez.webp" alt="Mark Rodriguez - Head Guide">
-                        <div class="profile-caption">
-                            <h3>Mark Rodriguez</h3>
-                            <p>Head Guide</p>
-                        </div>
-                    </div>
-                    
-                    <div class="profile-card">
-                        <img src="images/emily-chen.webp" alt="Emily Chen - Customer Relations Manager">
-                        <div class="profile-caption">
-                            <h3>Emily Chen</h3>
-                            <p>Customer Relations Manager</p>
-                        </div>
-                    </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Our Team</h2>
+            <div class="profiles-grid">
+                <div class="profile-card">
+                    <img src="images/sarah-johnson.webp" alt="Sarah Johnson, Safety Director">
+                    <h3>Sarah Johnson</h3>
+                    <p>Safety Director</p>
                 </div>
-            </section>
-        </div>
+
+                <div class="profile-card">
+                    <img src="images/mark-rodriguez.webp" alt="Mark Rodriguez, Head Guide">
+                    <h3>Mark Rodriguez</h3>
+                    <p>Head Guide</p>
+                </div>
+
+                <div class="profile-card">
+                    <img src="images/emily-chen.webp" alt="Emily Chen, Customer Relations Manager">
+                    <h3>Emily Chen</h3>
+                    <p>Customer Relations Manager</p>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 White Water Rafting Adventures | MFITUNDINDA BAKER</p>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 White Water Rafting Adventures | Mfitundinda Baker</p>
             <nav class="socialmedia">
                 <a href="https://facebook.com" aria-label="Visit our Facebook page">
                     <img src="images/facebook-square.svg" alt="Facebook Icon">
